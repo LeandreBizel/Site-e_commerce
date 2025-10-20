@@ -1,7 +1,17 @@
-html{
+* {
+    margin: 0;
+    font-family: arial;
+}
+
+html {
     background-color: #5C3E94;
 }
-nav{
+
+header {
+    margin: 7px;
+}
+
+nav {
     display: flex;
     justify-content: center;
     justify-content: space-between;
@@ -16,12 +26,44 @@ nav{
     padding-left: 20px;
     padding-right: 20px;
 }
-.navLink{
-    width: 30%;
+
+.navLink {
+    width: auto;
     display: flex;
     justify-content: space-between;
+    gap: 200px;
 }
-.navLink>a{
+.navLink > a {
+    position: relative;
     color: #F25912;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.navLink a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #F25912, #5C3E94);
+    transition: width 0.3s ease;
+}
+
+.navLink a:hover {
+    color: rgb(228, 108, 53);
+}
+
+.navLink a:hover::after {
+    width: 100%;
+}
+
+.navLink a.active {
+    color: #F25912;
+}
+
+.navLink a.active::after {
+    width: 100%;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
 }
