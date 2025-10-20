@@ -1,49 +1,142 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylecontact.css">
-    <title>A propos</title>
-</head>
-<body>
-<header> 
-    <nav class="navbar">
-    <div class="logo">Logo du site</div>
-    <ul class="nav-bouton">
-      <li><a href="#" class="active">Accueil</a></li>
-      <li><a href="#">Boissons</a></li>
-      <li><a href="#">Panier</a></li>
-      <li><a href="#">A propos</a></li>
-    </ul>
-  </nav>
-</header> 
-     <div class="case">
-    <h1>Contactez-nous</h1>
-    <form>
-      <div class="case-input">
-        <label for="name">Nom</label>
-        <input type="text" id="name" placeholder="Entrez votre nom" required>
-      </div>
-      <div class="case-input">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Entrez votre email" required>
-      </div>
-      <div class="case-input">
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Votre message..." required></textarea>
-      </div>
-      <button type="button" class="soumettre">Soumettre</button>
-      <p> 
-        <br>
-        où 
-      </p>
-      <div class="button-group">
-        <button type="button" class="btn login">Login</button>
-        <button type="button" class="btn signin">Sign In</button>
-      </div>
-    </form>
-  </div>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
 
-</body>
-</html>
+body {
+  background-color: #fff;
+}*
+
+
+
+html, body {
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8b48e7;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-bouton {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-bouton a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-bouton a.active {
+  font-weight: 700;
+}
+
+.form-case {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 70px; 
+}
+
+.case {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.case-input {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.case-input label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 600;
+}
+
+.case-input input,
+.case-input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.case-input textarea {
+  resize: none;
+  height: 100px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 5px;
+}
+
+.btn.login {
+  background: #4facfe;
+  color: #fff;
+}
+
+.btn.signin {
+  background: #00c853;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.soumettre {
+    background-color: #4facfe;
+    color: rgb(255, 255, 255);
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 5px;
+
+}
