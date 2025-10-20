@@ -1,9 +1,20 @@
+@import url(../CoreStyles/headerStyles.css);
+@import url(../CoreStyles/footerStyles.css);
+
+.fisrtSection{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    font-weight: bold;
+}
+
 .carousel {
     margin: 0 auto;
     padding: 20px 0;
-    max-width: 700px;
+    max-width: 1000px;
     overflow: hidden;
     display: flex;
+
 
     >* {
         flex: 0 0 100%;
@@ -16,28 +27,33 @@
 .card {
     display: flex;
     width: 100%;
-    color: white;
     border-radius: 24px;
+    background-color: transparent;
     box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
     padding: 20px;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 250px;
     width: 150px;
-    background-color: blue;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .card:hover{
     transform: scale(120%);
+    >span{
+        color : rgb(78, 88, 97);
+    }
 }
-.alcool{
+
+.Products{
     height: 200px;
     width: auto;
 }
 .card>span{
-    color:rgb(78, 88, 97);
+    color:transparent;
+    font-size: 10px;
 }
 
 .group {
@@ -57,4 +73,15 @@
     100% {
         transform: translateX(-100%);
     }
+}
+.interCarousel{
+   display: flex;
+   justify-content: center;
+   
+}
+.interCarousel>h3{
+    background-color: #8b48e7;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
 }
