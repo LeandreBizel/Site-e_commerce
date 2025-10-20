@@ -36,8 +36,8 @@
         background: #4300da;
     }
 }
-:hover .card{
-    background-color: red;
+.card:hover{
+    transform: scale(110%);
 }
 
 .group {
