@@ -27,3 +27,20 @@ html, body {
 .logo {
   font-weight: bold;
 }
+
+
+.nav-bouton {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-bouton a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-bouton a.active {
+  font-weight: 700;
+}
