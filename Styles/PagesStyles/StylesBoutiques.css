@@ -93,10 +93,10 @@ body{
 .interCarousel{
    display: flex;
    justify-content: center;
+   background-color: #b8962d; 
    
 }
 .interCarousel>h3{
-    background-color: #8b48e7;
     padding: 10px;
     border-radius: 10px;
     color: white;
