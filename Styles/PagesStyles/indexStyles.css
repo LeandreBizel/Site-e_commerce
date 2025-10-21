@@ -1,2 +1,233 @@
 @import url(../CoreStyles/headerStyles.css);
 @import url(../CoreStyles/footerStyles.css);
+
+html{
+    background-color: #5C3E94;
+}
+
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    background-color: #412B6B;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navLink{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.navLink>a{
+    color: #F25912;
+    text-decoration: none;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  border-radius: 102px;
+
+
+
+}
+
+.hero{
+  text-align: center;
+  background-color: #022951;
+}
+
+.titre{
+    width: 50px;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;               
+    justify-content: space-evenly; 
+    align-content: flex-start; 
+    margin: 20px; 
+}
+
+.soustitre{
+    width: 30px;
+    color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;               
+    justify-content: space-evenly; 
+    align-content: flex-start; 
+    margin: 20px; 
+
+}
+
+.Presentation{
+  position: relative;     
+  z-index: 1;
+  color: #d31010;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 2rem;
+
+}
+
+.banniere-defilante {
+  background-color: #b8962d;   
+  color: white;                
+  overflow: hidden;          
+  white-space: nowrap;         
+  box-sizing: border-box;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+
+}
+
+
+.banniere-defilante p {
+  display: inline-block;
+  padding-left: 100%;        
+  animation: defilement 15s linear infinite;
+}
+
+@keyframes defilement {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+
+
+.bloc-video {
+  position: relative;
+  height: 60vh;          
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+}
+.hero__content {
+  position: relative;   
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.25), rgba(0,0,0,.45));
+}
+
+
+
+.Produitsphares{
+    display: flex;
+    flex-wrap: wrap;               
+    justify-content: space-evenly; 
+    align-content: flex-start;     
+    gap: 28px;                     
+    max-width: 1400px;             
+    margin: 0 auto;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgba(0,0,0,.45), rgba(0,0,0,.25), rgba(0,0,0,0));
+}
+
+.bloc-produit {
+  flex: 0 0 240px;              
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;               
+}
+
+.bloc-produit img {
+  
+  width: 200px;
+  aspect-ratio: 1 / 1;   
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.bloc-produit:hover {
+  transform: scale(1.1);
+}
+
+.Boutique {
+    display: flex;
+    align-items: center;
+    background-color: #E9ECEF;
+    text-align: center;
+    background-color: #DEE2E6;
+    padding: 100px 20px 60px;
+}
+
+.Apropos {
+    display: flex;
+    align-items: center;
+    background-color: #90b1d1;
+    text-align: center;
+    background-color: #DEE2E6;
+    padding: 100px 20px 60px;
+}
+
+.bloc-text {
+    flex: 1;
+    color: #0a6cce;
+}
+.bloc-image {
+    flex: 1;
+}
+
+.bloc-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #adb5bd;
+}
+
+.Boutique {
+    flex-direction: row;
+}
+
+.Apropos {
+    flex-direction: row;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #6C757D;
+  color: #F8F9FA;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #495057;
+  transform: scale(1.05);
+}
