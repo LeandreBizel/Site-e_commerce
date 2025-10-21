@@ -10,10 +10,12 @@
 
 .carousel {
     margin: 0 auto;
+    height: 350px;
     padding: 20px 0;
     max-width: 1000px;
     overflow: hidden;
     display: flex;
+    align-items: center;
 
 
     >* {
@@ -42,6 +44,7 @@
 }
 .card:hover{
     transform: scale(120%);
+    box-shadow: rgba(255, 0, 0, 0.196) 5px 5px 20px 0;
     >span{
         color : rgb(78, 88, 97);
     }
