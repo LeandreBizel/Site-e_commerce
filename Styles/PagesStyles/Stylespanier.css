@@ -1,7 +1,7 @@
 @import url(../CoreStyles/headerStyles.css);
 @import url(../CoreStyles/footerStyles.css);
 
-/* Reset & base */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,7 +21,7 @@ html, body {
   height: 100%;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -63,7 +63,7 @@ html, body {
   color: #ffe55c;
 }
 
-/* Main content */
+
 .content {
   flex: 1;
   padding: 2rem;
@@ -80,7 +80,7 @@ html, body {
   color: #555;
 }
 
-/* Footer */
+
 footer {
   background-color: #8b48e7;
   color: white;
