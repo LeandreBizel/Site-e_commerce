@@ -1,3 +1,6 @@
+@import url(../CoreStyles/headerStyles.css);
+@import url(../CoreStyles/footerStyles.css);
+
 /* Reset & base */
 * {
   box-sizing: border-box;
