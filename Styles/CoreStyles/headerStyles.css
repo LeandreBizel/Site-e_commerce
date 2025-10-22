@@ -65,10 +65,6 @@ nav{
 
 .underline-lr:hover::after {
     transform: scaleX(1);
-
-    &.ca{
-        color: red;
-    }
 }
 
 .logo {
