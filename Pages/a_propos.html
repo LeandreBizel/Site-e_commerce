@@ -3,50 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Nova Brew</title>
     <link rel="stylesheet" href="../Styles/PagesStyles/styleapropos.css">
-    <title>A propos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-  <header>
+    <header>
         <nav>
             <div class="logoImage">
-                <a href="../index.html"><img src="../Image/Logo de Nova Brew.png" alt="AcceuilIcon" height="50"></a>
+                <a href="../index.html"> <img src="../Image/Logo de Nova Brew.png" alt="Accueil" height="50"> </a>
             </div>
             <div class="navLink">
-                <a href="boutique.html" class="underline-lr">Boutique</a>
-                <a href="a_propos.html" id="currentOn"  class="underline-lr">A propos</a>                                                                                                                                                     
+                <a href="boutique.html" class="underline-lr orbitron">Boutique</a>
+                <a href="a_propos.html" class="underline-lr orbitron">À propos</a>
             </div>
             <div class="cartImage">
-                <a href="Panier.html"><img src="../Images/panier.png" alt="Cart" height="50"></a>
+                <a href="Panier.html"> <img src="../Images/panier.png" alt="Panier" height="50"> </a>
             </div>
         </nav>
-    </header> 
-     <div class="case">
-    <h1>Contactez-nous</h1>
-    <form>
-      <div class="case-input">
-        <label for="name">Nom</label>
-        <input type="text" id="name" placeholder="Entrez votre nom" required>
-      </div>
-      <div class="case-input">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Entrez votre email" required>
-      </div>
-      <div class="case-input">
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Votre message..." required></textarea>
-      </div>
-      <button type="button" class="soumettre">Soumettre</button>
-      <p> 
-        <br>
-        où 
-      </p>
-      <div class="button-group">
-        <button type="button" class="btn login">Login</button>
-        <button type="button" class="btn signin">Sign In</button>
-      </div>
-    </form>
-  </div>
+    </header>
 
+    <main>
+        <!-- Section À propos -->
+        <section class="section">
+            <div class="a-propos">
+                <h1 class="orbitron">À Propos de Nova Brew</h1>
+                <p class="orbitron">Découvrez notre histoire, notre passion et notre engagement pour vous offrir les meilleurs boissons au meilleur prix.</p>
+            </div>
+
+            <div class="cases-a-propos">
+                <div class="case">
+                    <div class="icone">☕</div>
+                    <h3 class="orbitron">Notre Passion</h3>
+                    <p>Depuis 2025, nous sélectionnons les meilleures boissons, de tout type, à vous proposez au prix le plus compétitif.</p>
+                </div>
+
+                <div class="case">
+                    <div class="icone">🌍</div>
+                    <h3 class="orbitron">Entreprise Française</h3>
+                    <p>Nous sommes basés en France, nous et nos locaux pour vous garantir des livraisons rapides.</p>
+                </div>
+
+                <div class="case">
+                    <div class="icone">⭐</div>
+                    <h3 class="orbitron">? ?</h3>
+                    <p>??</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section class="section-contact">
+            <div class="contact">
+                <h2 class="orbitron">Contactez-nous</h2>
+                <p class="orbitron">Une question ? Une suggestion ? N'hésitez pas à nous écrire !</p>
+            </div>
+
+            <form class="formulaire">
+                <div class="formu-champ">
+                    <label class="orbitron">Nom complet</label>
+                    <input type="text" placeholder="Entrez votre nom">
+                </div>
+
+                <div class="formu-champ">
+                    <label class="orbitron">Adresse email</label>
+                    <input type="email" placeholder="votre@email.com">
+                </div>
+
+                <div class="formu-champ">
+                    <label class="orbitron">Sujet</label>
+                    <input type="text" placeholder="Objet de votre message">
+                </div>
+
+                <div class="formu-champ">
+                    <label class="orbitron">Message</label>
+                    <textarea placeholder="Écrivez votre message ici..." required></textarea>
+                </div>
+
+                <button type="button" class="valider" >Envoyer le message</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025. Tous droits réservés by Mathis.</p>
+    </footer>
 </body>
 </html>
