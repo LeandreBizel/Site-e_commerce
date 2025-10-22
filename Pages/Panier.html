@@ -22,10 +22,78 @@
         </nav>
     </header>
 
-  <main class="content">
-    <h1>Votre panier est vide 🛒</h1>
-    <p>Ajoutez des articles depuis la page Boissons pour les voir ici.</p>
+    <main class="content">
+    <h1>Votre panier 🛒</h1>
+
+    <section class="cart">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Produit</th>
+            <th>Prix</th>
+            <th>Quantité</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="product">
+              <img src="../Images/boisson1.jpg" alt="Boisson 1">
+              <span>Café Nova Brew</span>
+            </td>
+            <td>5,00 €</td>
+            <td>2</td>
+            <td>10,00 €</td>
+          </tr>
+          <tr>
+            <td class="product">
+              <img src="../Images/boisson2.jpg" alt="Boisson 2">
+              <span>Thé Matcha</span>
+            </td>
+            <td>4,50 €</td>
+            <td>1</td>
+            <td>4,50 €</td>
+          </tr>
+          <tr>
+            <td class="product">
+              <img src="../Images/boisson3.jpg" alt="Boisson 3">
+              <span>Chocolat Froid</span>
+            </td>
+            <td>6,00 €</td>
+            <td>3</td>
+            <td>18,00 €</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <h2>Total du panier</h2>
+        <p>Sous-total : <strong>32,50 €</strong></p>
+        <p>Frais de livraison : <strong>3,00 €</strong></p>
+        <hr>
+
+        <div class="promo-code">
+          <label for="promo">Code promo :</label>
+          <input type="text" id="promo" name="promo" placeholder="Entrez votre code">
+          <button class="apply-btn">Appliquer</button>
+        </div>
+
+        <hr>
+        <p class="total">Total à payer : <strong>35,50 €</strong></p>
+
+        <button class="checkout-btn">Passer la commande</button>
+
+        <div class="paypal-section">
+          <p>Ou payez avec :</p>
+          <button class="paypal-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal Logo">
+            Payer avec PayPal
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
+
 
   <footer>
     <p>&copy; 2025 - Mon E-shop. Tous droits réservés by Léandre.</p>
