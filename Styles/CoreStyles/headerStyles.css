@@ -9,8 +9,8 @@
 html{
     background-color: rgb(238, 238, 238);
 }
-
 body{
+    overflow-x: hidden;
     margin: 0;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
