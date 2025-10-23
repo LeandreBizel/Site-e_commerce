@@ -1,109 +1,206 @@
 @import url(../CoreStyles/headerStyles.css);
 @import url(../CoreStyles/footerStyles.css);
 
-body {
-  background-color: #fff;
-}*
-
-
-
-html, body {
-  height: 100%;
+.orbitron {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
-.form-case {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding-top: 70px; 
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.case {
-  background: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgb(36, 73, 129);
+            min-height: 100vh;
+            color: #333;
+        }
 
-h1 {
-  margin-bottom: 20px;
-  color: #333;
-}
 
-.case-input {
-  text-align: left;
-  margin-bottom: 15px;
-}
+        /* Container principal */
+        main {
+            padding-top: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
-.case-input label {
-  display: block;
-  margin-bottom: 5px;
-  color: #555;
-  font-weight: 600;
-}
+        /* Section À propos */
+        .section {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            margin: 40px 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
 
-.case-input input,
-.case-input textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 14px;
-}
+        .a-propos {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-.case-input textarea {
-  resize: none;
-  height: 100px;
-}
+        .a-propos h1 {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 20px;
+        }
 
-.button-group {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
+        .a-propos p {
+            font-size: 20px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
 
-.btn {
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-  margin: 0 5px;
-}
+        .cases-a-propos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
 
-.btn.login {
-  background: #4facfe;
-  color: #fff;
-}
+        .case {
+            background: rgb(36, 73, 129);
+            padding: 40px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            transition: transform 0.3s;
+        }
 
-.btn.signin {
-  background: #00c853;
-  color: #fff;
-}
+        .case:hover {
+            transform: translateY(-10px);
+        }
 
-.btn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
+        .case h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
 
-.soumettre {
-    background-color: #4facfe;
-    color: rgb(255, 255, 255);
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-    margin: 0 5px;
+        .case p {
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
 
-}
+        .icone {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        /* Section Formulaire */
+        .section-contact {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            margin: 40px 0 60px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact h2 {
+            font-size: 38px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .formulaire {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .formu-champ {
+            margin-bottom: 25px;
+        }
+
+        .formu-champ label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .formu-champ input,
+        .formu-champ textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: all 0.3s;
+        }
+
+        .formu-champ input:focus,
+        .formu-champ textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .formu-champ textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .valider {
+            width: 100%;
+            padding: 15px;
+            background: rgb(36, 73, 129);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .valider:hover {
+            transform: translateY(-5%);
+            box-shadow: 0 10px 25px rgb(36, 73, 129);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 20px;
+            }
+
+            .about-section,
+            .contact-section {
+                padding: 30px 20px;
+            }
+
+            .about-header h1 {
+                font-size: 36px;
+            }
+
+            .contact-header h2 {
+                font-size: 30px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }

@@ -8,21 +8,92 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <div class="nav-left">🍹 <strong>Logo</strong></div>
-      <ul class="nav-links">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Boissons</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#" class="active">Panier</a></li>
-      </ul>
-    </nav>
-  </header>
+        <nav>
+            <div class="logoImage">
+                <a href="../index.html"><img src="../Image/Logo de Nova Brew.png" alt="AcceuilIcon" height="50"></a>
+            </div>
+            <div class="navLink">
+                <a href="boutique.html" class="underline-lr">Boutique</a>
+                <a href="a_propos.html" class="underline-lr">A propos</a>                                                                                                                                                     
+            </div>
+            <div class="cartImage">
+                <a href="Panier.html"><img src="../Images/panier.png" alt="Cart" height="50"></a>
+            </div>
+        </nav>
+    </header>
 
-  <main class="content">
-    <h1>Votre panier est vide 🛒</h1>
-    <p>Ajoutez des articles depuis la page Boissons pour les voir ici.</p>
+    <main class="content">
+    <h1>Votre panier 🛒</h1>
+
+    <section class="cart">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Produit</th>
+            <th>Prix</th>
+            <th>Quantité</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="product">
+              <img src="../Images/Vodka.png" alt="Boisson 1">
+              <span>Vodka</span>
+            </td>
+            <td>18,00 €</td>
+            <td>3</td>
+            <td>54,00 €</td>
+          </tr>
+          <tr>
+            <td class="product">
+              <img src="../Images/redBull.png" alt="Boisson 2">
+              <span>Redbull</span>
+            </td>
+            <td>2,00 €</td>
+            <td>5</td>
+            <td>10,00 €</td>
+          </tr>
+          <tr>
+            <td class="product">
+              <img src="../Images/Gin.png" alt="Boisson 3">
+              <span>Gin</span>
+            </td>
+            <td>12,00 €</td>
+            <td>3</td>
+            <td>36,00 €</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <h2>Total du panier</h2>
+        <p>Sous-total : <strong>100,00 €</strong></p>
+        <p>Frais de livraison : <strong>3,00 €</strong></p>
+        <hr>
+
+        <div class="promo-code">
+          <label for="promo">Code promo :</label>
+          <input type="text" id="promo" name="promo" placeholder="Entrez votre code">
+          <button class="apply-btn">Appliquer</button>
+        </div>
+
+        <hr>
+        <p class="total">Total à payer : <strong>103,00 €</strong></p>
+
+        <button class="checkout-btn">Passer la commande</button>
+
+        <div class="paypal-section">
+          <p>Ou payez avec :</p>
+          <button class="paypal-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal Logo">
+            Payer avec PayPal
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
+
 
   <footer>
     <p>&copy; 2025 - Mon E-shop. Tous droits réservés by Léandre.</p>
