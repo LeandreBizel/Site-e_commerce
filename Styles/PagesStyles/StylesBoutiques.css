@@ -189,6 +189,10 @@ button:hover::after {
     display: flex;
     align-items: center;
 }
+.Vente{
+    display: flex;
+    flex-direction: column;
+}
 .Baniere{
     height: 500px;
     border-radius: 10px;
