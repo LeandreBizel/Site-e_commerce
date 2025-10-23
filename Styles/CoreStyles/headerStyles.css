@@ -18,7 +18,6 @@ body{
 nav{
     width: 100%;
     display: flex;
-    justify-content: center;
     justify-content: space-between;
     margin: 0;
     align-items: center;
@@ -26,6 +25,7 @@ nav{
     height: 70px;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: hidden;
 }
 .navLink{
     width: 30%;
@@ -80,7 +80,7 @@ nav{
   height: 50px;
   width: auto;
   border-radius: 102px;
-
-
-
+}
+.cartImage img:hover{
+    transform: rotateZ(-30deg);
 }

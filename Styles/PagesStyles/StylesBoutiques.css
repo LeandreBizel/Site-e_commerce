@@ -10,6 +10,7 @@
 
 h1 {
     color: white;
+    font-size: 00px;
 }
 
 .fisrtSection {
@@ -23,6 +24,7 @@ h1 {
     background-repeat: no-repeat;
     align-items: center;
     margin: 0;
+    
 }
 
 .carousel {
