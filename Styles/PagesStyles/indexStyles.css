@@ -9,27 +9,6 @@ body{
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    margin: 0;
-    align-items: center;
-    background-color: #412B6B;
-    height: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.navLink{
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-}
-.navLink>a{
-    color: #F25912;
-    text-decoration: none;
-}
-
 .logo {
   height: 50px;
   width: auto;
@@ -103,12 +82,6 @@ nav{
   from { transform: rotate(0deg); }
   to   { transform: rotate(-180deg); }
 }
-
-
-
-
-
-
 
 .Presentation {
   position: relative;

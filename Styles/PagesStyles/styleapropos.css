@@ -1,11 +1,18 @@
 @import url(../CoreStyles/headerStyles.css);
 @import url(../CoreStyles/footerStyles.css);
 
-.orbitron {
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
+.fisrtSection {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    height: 650px;
+    background-image: url('../../Images/bar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin: 0;
+    color: white;
 }
 
         * {

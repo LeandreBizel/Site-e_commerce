@@ -17,7 +17,7 @@ h1 {
     display: flex;
     justify-content: center;
     font-weight: bold;
-    height: 200px;
+    height: 650px;
     background-image: url('../../Images/bar.jpg');
     background-size: cover;
     background-position: center;
@@ -118,7 +118,7 @@ h1 {
 .interCarousel {
     display: flex;
     justify-content: center;
-    background-color: #5F021F;
+    background-color: black;
     border-radius: 10px;
     margin: 30px;
 
@@ -134,7 +134,7 @@ button {
     border-radius: 10px;
     opacity: 0%;
     background-color: transparent;
-    color: #593F62;
+    color: black;
     border-color: transparent;
     position: relative;
     text-decoration: none;
@@ -149,7 +149,7 @@ button::after {
     bottom: -5px;
     width: 100%;
     height: 4px;
-    background: #593F62;
+    background: black;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
@@ -160,7 +160,7 @@ button:hover::after {
     transform: scaleX(1);
 }
 .ProductContainer {
-    background-color: rgb(255, 255, 255, 0.3);
+    background-color: transparent;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -184,4 +184,15 @@ button:hover::after {
         max-width: 100%;
     }
 }
+
+.MidPage{
+    display: flex;
+    align-items: center;
+}
+.Baniere{
+    height: 500px;
+    border-radius: 10px;
+}
+
+
 
