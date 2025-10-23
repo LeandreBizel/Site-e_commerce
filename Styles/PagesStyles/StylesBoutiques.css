@@ -30,15 +30,13 @@ h1 {
     border-color: black;
     border-width: 10px;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
     height: 350px;
-    padding: 20px 0;
-    max-width: 500px;
+    max-width: 600px;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
 
     >* {
         flex: 0 0 100%;
@@ -71,7 +69,7 @@ h1 {
     box-shadow: rgba(0, 0, 0, 40%) 5px 5px 20px 0;
 
     >span {
-        color: #593F62;
+        font-weight: bold;
     }
 
     >button {
@@ -86,8 +84,9 @@ h1 {
 }
 
 .card>span {
-    color: transparent;
+    color: #593F62;
     font-size: 10px;
+    margin-top: 10px;
 }
 
 .group {
@@ -109,24 +108,26 @@ h1 {
     }
 }
 .productSection{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 0;
-    background-color: #e8f6ff;
+    padding-bottom: 50px;
 }
 .interCarousel {
     display: flex;
     justify-content: center;
-    background-color: transparent;
+    background-color: #5F021F;
+    border-radius: 10px;
+    margin: 30px;
 
 }
 
 .interCarousel>h3 {
     padding: 10px;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 button {
@@ -158,10 +159,29 @@ button::after {
 button:hover::after {
     transform: scaleX(1);
 }
-.ProductContainer{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
+.ProductContainer {
+    background-color: rgb(255, 255, 255, 0.3);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: auto;
+    max-width: 1200px;
+    padding: 50px;
+    border-radius: 10px;
+    height: auto;
 }
+
+@media (max-width: 900px) {
+    .ProductContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 450px) {
+    .ProductContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .carousel{
+        max-width: 100%;
+    }
+}
+
