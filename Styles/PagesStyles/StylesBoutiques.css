@@ -1,6 +1,5 @@
 @import url(../CoreStyles/headerStyles.css);
 @import url(../CoreStyles/footerStyles.css);
-
 .orbitron {
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
@@ -10,7 +9,7 @@
 
 h1 {
     color: white;
-    font-size: 00px;
+    font-size: 100px;
 }
 
 .fisrtSection {
@@ -59,7 +58,7 @@ h1 {
     align-items: center;
     height: 250px;
     flex-direction: column;
-    flex-shrink: 0; /* Important pour le carousel */
+    flex-shrink: 0;
 }
 
 .card:hover {
@@ -170,8 +169,23 @@ button:hover::after {
 }
 
 @media (max-width: 900px) {
+    .fisrtSection{
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+    }
     .ProductContainer {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .MidPage{
+        flex-direction: column;
+    }
+    .Pub {
+        display: none;
+    }
+    .interCarousel{
+        width: 250px;
     }
 }
 
@@ -180,15 +194,30 @@ button:hover::after {
         grid-template-columns: repeat(1, 1fr);
     }
     .carousel {
-        max-width: 100%;
+        max-width: 200px;
+    }
+    .ProductContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Pub{
+        display: none;
+    }
+    nav{
+        height: auto;
+    }
+    .navLink{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logoImage{
+        display: none;
     }
 }
 
-/* PARTIE STICKY - LES CORRECTIONS IMPORTANTES */
 .MidPage {
     display: flex;
     gap: 20px;
-    align-items: flex-start; /* Important ! */
+    align-items: flex-start;
     max-width: 1400px;
     margin: 50px auto;
     padding: 0 20px;
@@ -197,18 +226,18 @@ button:hover::after {
 .Vente {
     display: flex;
     flex-direction: column;
-    flex: 1; /* Prend l'espace disponible */
+    flex: 1;
 }
 
 .Pub {
-    width: 250px; /* Largeur fixe pour la pub */
-    height: 1250px; /* S'adapte au contenu */
-    flex-shrink: 0; /* Ne rétrécit pas */
+    width: 250px;
+    height: 1250px;
+    flex-shrink: 0;
 }
 
 .Pub img {
     position: sticky;
-    top: 50px; /* Distance du haut */
+    top: 50px;
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -218,22 +247,4 @@ button:hover::after {
 
 .Pub img:hover {
     transform: scale(1.05);
-}
-
-/* Pour le responsive */
-@media (max-width: 1200px) {
-    .MidPage {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .Pub {
-        width: 100%;
-        max-width: 600px;
-        position: relative; /* Annule le sticky sur mobile */
-    }
-    
-    .Pub img {
-        position: relative; /* Annule le sticky sur mobile */
-    }
 }

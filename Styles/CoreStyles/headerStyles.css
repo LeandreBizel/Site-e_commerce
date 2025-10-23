@@ -23,8 +23,6 @@ nav{
     align-items: center;
     background-color: black;
     height: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
     overflow: hidden;
 }
 .navLink{
