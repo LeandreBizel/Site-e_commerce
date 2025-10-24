@@ -1,22 +1,29 @@
-html{
-    background-color: rgb(255, 255, 255);
+
+.orbitron {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
+html{
+    background-color: rgb(238, 238, 238);
+}
 body{
+    overflow-x: hidden;
     margin: 0;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
 nav{
+    width: 100%;
     display: flex;
-    justify-content: center;
     justify-content: space-between;
     margin: 0;
     align-items: center;
-    background-color: #36151E;
+    background-color: black;
     height: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
+    overflow: hidden;
 }
 .navLink{
     width: 30%;
@@ -35,7 +42,7 @@ nav{
     bottom: -5px;
     width: 100%;
     height: 3px;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 230, 0);
     transform: scaleX(1);
     transform-origin: left;
     transition: transform 0.4s ease;
@@ -56,7 +63,7 @@ nav{
     bottom: -5px;
     width: 100%;
     height: 3px;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 230, 0);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
@@ -71,7 +78,7 @@ nav{
   height: 50px;
   width: auto;
   border-radius: 102px;
-
-
-
+}
+.cartImage img:hover{
+    transform: rotateZ(-30deg);
 }

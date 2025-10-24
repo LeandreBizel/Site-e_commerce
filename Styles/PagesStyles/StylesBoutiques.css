@@ -1,7 +1,5 @@
 @import url(../CoreStyles/headerStyles.css);
 @import url(../CoreStyles/footerStyles.css);
-
-
 .orbitron {
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
@@ -11,48 +9,47 @@
 
 h1 {
     color: white;
+    font-size: 100px;
 }
 
 .fisrtSection {
     display: flex;
     justify-content: center;
     font-weight: bold;
-    height: 200px;
+    height: 650px;
     background-image: url('../../Images/bar.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     align-items: center;
     margin: 0;
+    
 }
 
 .carousel {
     border-color: black;
     border-width: 10px;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
     height: 350px;
-    padding: 20px 0;
-    max-width: 500px;
+    max-width: 600px;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
-    >* {
-        flex: 0 0 100%;
-    }
+.carousel > * {
+    flex: 0 0 100%;
+}
 
-    &:hover .group {
-        animation-play-state: paused;
-    }
-
+.carousel:hover .group {
+    animation-play-state: paused;
 }
 
 .card {
     display: flex;
-    width: 100%;
+    width: 150px;
     border-radius: 24px;
     background-color: transparent;
     box-shadow: rgba(0, 0, 0, 20%) 5px 5px 20px 0;
@@ -60,24 +57,22 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 250px;
-    width: 150px;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 .card:hover {
-    transform: scale(120%);
+    transform: scale(1.2);
     box-shadow: rgba(0, 0, 0, 40%) 5px 5px 20px 0;
+}
 
-    >span {
-        color: #593F62;
-    }
+.card:hover > span {
+    font-weight: bold;
+}
 
-    >button {
-        opacity: 100%;
-        transition: all .3s ease-in-out;
-    }
+.card:hover > button {
+    opacity: 100%;
+    transition: all .3s ease-in-out;
 }
 
 .Products {
@@ -85,9 +80,10 @@ h1 {
     width: auto;
 }
 
-.card>span {
-    color: transparent;
+.card > span {
+    color: #593F62;
     font-size: 10px;
+    margin-top: 10px;
 }
 
 .group {
@@ -98,42 +94,43 @@ h1 {
     animation: scrolling 10s linear infinite;
 }
 
-
 @keyframes scrolling {
     0% {
         transform: translateX(0);
     }
-
     100% {
         transform: translateX(-100%);
     }
 }
-.productSection{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+.productSection {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 0;
-    background-color: #e8f6ff;
+    padding-bottom: 50px;
 }
+
 .interCarousel {
     display: flex;
     justify-content: center;
-    background-color: transparent;
-
+    background-color: black;
+    border-radius: 10px;
+    margin: 30px;
 }
 
-.interCarousel>h3 {
+.interCarousel > h3 {
     padding: 10px;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 button {
     border-radius: 10px;
     opacity: 0%;
     background-color: transparent;
-    color: #593F62;
+    color: black;
     border-color: transparent;
     position: relative;
     text-decoration: none;
@@ -148,7 +145,7 @@ button::after {
     bottom: -5px;
     width: 100%;
     height: 4px;
-    background: #593F62;
+    background: black;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
@@ -158,10 +155,96 @@ button::after {
 button:hover::after {
     transform: scaleX(1);
 }
-.ProductContainer{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+
+.ProductContainer {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: auto;
+    max-width: 1200px;
+    padding: 50px;
+    border-radius: 10px;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    .fisrtSection{
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .ProductContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .MidPage{
+        flex-direction: column;
+    }
+    .Pub {
+        display: none;
+    }
+    .interCarousel{
+        width: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+    .ProductContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .carousel {
+        max-width: 200px;
+    }
+    .ProductContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Pub{
+        display: none;
+    }
+    nav{
+        height: auto;
+    }
+    .navLink{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logoImage{
+        display: none;
+    }
+}
+
+.MidPage {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.Vente {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Pub {
+    width: 250px;
+    height: 1250px;
+    flex-shrink: 0;
+}
+
+.Pub img {
+    position: sticky;
+    top: 50px;
     width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.Pub img:hover {
+    transform: scale(1.05);
 }
