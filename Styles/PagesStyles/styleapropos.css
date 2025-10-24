@@ -180,7 +180,7 @@
 
         .valider:hover {
             transform: translateY(-5%);
-            box-shadow: 0 10px 25px rgb(36, 73, 129);
+            box-shadow: 0 10px 25px rgb(54, 49, 0);
         }
 
         @media (max-width: 768px) {
