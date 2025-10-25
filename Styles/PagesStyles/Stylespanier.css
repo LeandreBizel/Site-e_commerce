@@ -11,9 +11,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: rgb(240, 240, 240);
     color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 html, body {
@@ -21,9 +18,8 @@ html, body {
 }
 
 .content {
-    flex: 1;
     padding: 2rem;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .page-container {
@@ -45,66 +41,99 @@ html, body {
     margin-bottom: 2rem;
     color: #333;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 .cart-items {
     background: white;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    padding: 2rem;
     margin-bottom: 3rem;
 }
 
-.cart-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Nouveau style pour les items du panier (plus de tableau) */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-bottom: 2px solid #f0f0f0;
 }
 
-.cart-table th,
-.cart-table td {
-    padding: 1.2rem;
-    text-align: center;
-    border-bottom: 1px solid #eee;
-}
-
-.cart-table th {
-    background: rgb(255, 230, 0);
-    color: #333;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-}
-
-.cart-table tr:last-child td {
+.cart-item:last-child {
     border-bottom: none;
 }
 
-.product {
+.item-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.item-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #666;
+}
+
+.item-quantity {
     display: flex;
     align-items: center;
     gap: 1rem;
-    justify-content: flex-start;
+    margin-right: 2rem;
 }
 
-.product img {
-    width: 60px;
-    height: 60px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-.product span {
-    font-weight: 600;
+.item-quantity span {
     font-size: 16px;
+    color: #666;
+}
+
+.quantity-value {
+    background: rgb(240, 240, 240);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    min-width: 40px;
+    text-align: center;
+}
+
+.item-total {
+    font-size: 22px;
+    font-weight: bold;
     color: #333;
+    min-width: 100px;
+    text-align: right;
 }
 
 /* Section droite : Résumé fixe */
 .cart-summary-sidebar {
-    width: 380px;
+    width: 400px;
     flex-shrink: 0;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    height: fit-content;
 }
 
 .cart-summary {
@@ -112,16 +141,14 @@ html, body {
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 2rem;
 }
 
 .cart-summary h2 {
     color: #333;
     margin-bottom: 1.5rem;
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 .cart-summary p {
@@ -260,7 +287,7 @@ html, body {
     color: #333;
     margin-bottom: 2rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 .suggestions-grid {
@@ -330,35 +357,64 @@ html, body {
 
     .cart-summary-sidebar {
         width: 100%;
+        position: static;
     }
 
-    .cart-summary {
-        position: static;
+    .cart-item {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .item-quantity {
+        margin-right: 0;
     }
 }
 
 @media (max-width: 768px) {
     .content {
         padding: 1rem;
-        padding-top: 60px;
+        padding-top: 80px;
     }
 
     .cart-items-section h1 {
-        font-size: 200%;
+        font-size: 32px;
     }
 
     .suggestions-section h2 {
-        font-size: 200%;
+        font-size: 28px;
     }
 
-    .product span {
-        font-size: 14px;
+    .cart-items {
+        padding: 1rem;
     }
 
-    .cart-table th,
-    .cart-table td {
-        padding: 0.8rem 0.5rem;
-        font-size: 14px;
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-info {
+        width: 100%;
+    }
+
+    .item-info img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .item-name {
+        font-size: 18px;
+    }
+
+    .item-quantity {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .item-total {
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
     }
 
     .suggestions-grid {
