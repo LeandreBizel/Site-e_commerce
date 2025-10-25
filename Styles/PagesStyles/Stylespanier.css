@@ -22,7 +22,6 @@ html, body {
   height: 100%;
 }
 
-/* --- NAVBAR --- */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -64,7 +63,7 @@ html, body {
   color: #ffe55c;
 }
 
-/* --- CONTENU PRINCIPAL --- */
+
 .content {
   flex: 1;
   padding: 2rem;
@@ -81,7 +80,7 @@ html, body {
   color: #555;
 }
 
-/* --- PANIER FACTICE --- */
+
 .cart {
   display: flex;
   flex-direction: column;
@@ -131,7 +130,7 @@ html, body {
   object-fit: cover;
 }
 
-/* --- RÉSUMÉ DU PANIER --- */
+
 .cart-summary {
   background: white;
   padding: 1.5rem 2rem;
@@ -182,7 +181,6 @@ html, body {
   background-color: #742cd0;
 }
 
-/* --- CHAMP CODE PROMO --- */
 .promo-code {
   display: flex;
   flex-direction: column;
@@ -217,7 +215,6 @@ html, body {
   background-color: #742cd0;
 }
 
-/* --- FAUX BOUTON PAYPAL --- */
 .paypal-section {
   text-align: center;
   margin-top: 1.5rem;
@@ -254,7 +251,7 @@ html, body {
   background-color: #f4b830;
 }
 
-/* --- RESPONSIVE --- */
+
 @media (max-width: 700px) {
   .product span {
     font-size: 0.9rem;
@@ -270,7 +267,7 @@ html, body {
   }
 }
 
-/* --- FOOTER --- */
+
 footer {
   background-color: #8b48e7;
   color: white;
