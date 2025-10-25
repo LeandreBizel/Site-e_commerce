@@ -1,4 +1,3 @@
-
 .orbitron {
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
@@ -9,13 +8,18 @@
 html{
     background-color: rgb(238, 238, 238);
 }
+
 body{
     overflow-x: hidden;
     margin: 0;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    padding-top: 70px; /* Compense la hauteur de la navbar fixe */
 }
 
 nav{
+    position: fixed; /* Fixe la navbar en haut */
+    top: 0; /* Positionne en haut de la page */
+    left: 0; /* Alignement à gauche */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -24,17 +28,22 @@ nav{
     background-color: black;
     height: 70px;
     overflow: hidden;
+    z-index: 1000; /* Assure que la navbar reste au-dessus du contenu */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Ombre pour effet de profondeur (optionnel) */
 }
+
 .navLink{
     width: 30%;
     display: flex;
     justify-content: space-between;
     font-weight: bold;
 }
+
 .navLink>a{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
 #currentOn::after {
     content: '';
     position: absolute;
@@ -79,6 +88,7 @@ nav{
   width: auto;
   border-radius: 102px;
 }
+
 .cartImage img:hover{
     transform: rotateZ(-30deg);
 }

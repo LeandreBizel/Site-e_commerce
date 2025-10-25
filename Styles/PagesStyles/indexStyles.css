@@ -2,7 +2,9 @@
 @import url(../CoreStyles/footerStyles.css);
 html{
     background-color: #5C3E94;
+
 }
+
 
 body{
     margin: 0;
@@ -14,6 +16,9 @@ body{
   width: auto;
   border-radius: 102px;
 }
+
+
+
 .hero {
   height: 90vh;
   display: flex;
@@ -21,26 +26,37 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(135deg, #f2f1f3, #5C3E94, #391841);
-  background-size: 300% 300%;
-  animation: bgMove 10s ease infinite;
+  color: #fff;
+  background: linear-gradient(135deg, #5a025a, #8f8d14, #041860);
+  background-size: 400% 400%;
+  animation: bgGradient 10s ease infinite;
 }
 
-@keyframes bgMove {
-  0%,100% { background-position: 0% 50%; }
+@keyframes bgGradient {
+  0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-.hero .titre {
-  font-size: 4.5rem;
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #8b04d9, #f7f703, #f9f9f8);
+  background: linear-gradient(90deg, #6b91fa, #d087ed, #f2f4c1);
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   animation: textMove 6s ease infinite;
+
+
 }
+
+h1 {
+    font-size: 100px;
+}
+
 
 @keyframes textMove {
   0%,100% { background-position: 0% 50%; }
@@ -54,9 +70,9 @@ body{
 }
 
 .image-boisson1 {
-  position: absolute; /* ou absolute selon votre besoin */
+  position: absolute; 
   height: 200px;
-  top: 400px;
+  top: 450px;
   left: 50px;
   rotate: 330deg;
   animation: rotateOnScroll1 2s;
@@ -65,12 +81,12 @@ body{
 }
 @keyframes rotateOnScroll1 {
   from { transform: rotate(0deg); }
-  to   { transform: rotate(180deg); }
+  to   { transform: rotate(200deg); }
 }
 .image-boisson2 {
-  position: absolute; /* ou absolute selon votre besoin */
+  position: absolute; 
   height: 200px;
-  top: 400px;
+  top: 450px;
   right: 50px;
   rotate: 30deg;
   animation: rotateOnScroll2 2s;
@@ -80,13 +96,14 @@ body{
 
 @keyframes rotateOnScroll2 {
   from { transform: rotate(0deg); }
-  to   { transform: rotate(-180deg); }
+  to   { transform: rotate(-200deg); }
 }
+
+
 
 .Presentation {
   position: relative;
-  text-align: center;
-  color: #d31010;
+  text-align: center;  color: #d31010;
   padding: 3rem 1rem;
   display: grid;
   place-items: center;
@@ -114,6 +131,54 @@ body{
   }
 }
 
+
+
+
+.Produitsphares{
+    display: flex;
+    flex-wrap: wrap;               
+    justify-content: space-evenly; 
+    align-content: flex-start;     
+    gap: 28px;                     
+    max-width: 1400px;             
+    margin: 0 auto;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgba(0,0,0,.45), rgba(0,0,0,.25), rgba(0,0,0,0));
+}
+
+.bloc-produit {
+  flex: 0 0 240px;              
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;               
+}
+.text-produit{
+  color: #b8962d;
+
+}
+.bloc-produit img {
+  
+  width: 200px;
+  aspect-ratio: 1 / 1;   
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.bloc-produit .btn{
+  opacity: 0;
+  transition: .3s;
+}
+
+.bloc-produit:hover .btn{
+  opacity: 1;
+}
+
+.bloc-produit:hover {
+  transform: scale(1.1);
+}
 
 
 
@@ -157,56 +222,28 @@ body{
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 100%;
+  height: 120%;
   object-fit: cover;      
 }
 .hero__content {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  text-transform: uppercase;
   position: relative;   
   z-index: 1;
   color: #fff;
   text-align: center;
   display: grid;
   place-items: center;
-  height: 100%;
+  height: 60%;
   padding: 2rem;
   background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.25), rgba(0,0,0,.45));
 }
 
 
 
-.Produitsphares{
-    display: flex;
-    flex-wrap: wrap;               
-    justify-content: space-evenly; 
-    align-content: flex-start;     
-    gap: 28px;                     
-    max-width: 1400px;             
-    margin: 0 auto;
-    padding: 24px 16px;
-    box-sizing: border-box;
-    background: linear-gradient(to top, rgba(0,0,0,.45), rgba(0,0,0,.25), rgba(0,0,0,0));
-}
 
-.bloc-produit {
-  flex: 0 0 240px;              
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 240px;               
-}
-
-.bloc-produit img {
-  
-  width: 200px;
-  aspect-ratio: 1 / 1;   
-  object-fit: cover;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-}
-
-.bloc-produit:hover {
-  transform: scale(1.1);
-}
 
 .Boutique {
     display: flex;
@@ -226,9 +263,11 @@ body{
     padding: 100px 20px 60px;
 }
 
-.bloc-text {
+.text-page {
     flex: 1;
     color: #0a6cce;
+    margin: 30px;
+    font-size: 160%;
 }
 .bloc-image {
     flex: 1;
@@ -248,7 +287,10 @@ body{
 .Apropos {
     flex-direction: row;
 }
-
+.bloc-text {
+    flex: 1;
+    color: #0a6cce;
+}
 
 .btn {
   display: inline-block;
@@ -267,3 +309,5 @@ body{
   background-color: #495057;
   transform: scale(1.05);
 }
+
+
