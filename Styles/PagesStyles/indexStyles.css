@@ -248,18 +248,16 @@ h1 {
 .Boutique {
     display: flex;
     align-items: center;
-    background-color: #E9ECEF;
+    background-color: #e4c8e1;
     text-align: center;
-    background-color: #DEE2E6;
     padding: 100px 20px 60px;
 }
 
 .Apropos {
     display: flex;
     align-items: center;
-    background-color: #90b1d1;
+    background-color: #e4c8e1;
     text-align: center;
-    background-color: #DEE2E6;
     padding: 100px 20px 60px;
 }
 
