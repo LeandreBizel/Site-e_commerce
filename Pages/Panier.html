@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panier - Mon E-commerce</title>
+  <title>Panier - Nova Brew</title>
   <link rel="stylesheet" href="../Styles/PagesStyles/Stylespanier.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-        <nav>
-            <div class="logoImage">
-                <a href="../index.html"><img src="../Image/Logo de Nova Brew.png" alt="AcceuilIcon" height="50"></a>
-            </div>
-            <div class="navLink">
-                <a href="boutique.html" class="underline-lr">Boutique</a>
-                <a href="a_propos.html" class="underline-lr">A propos</a>                                                                                                                                                     
-            </div>
-            <div class="cartImage">
-                <a href="Panier.html"><img src="../Images/panier.png" alt="Cart" height="50"></a>
-            </div>
-        </nav>
-    </header>
+    <nav>
+      <div class="logoImage">
+        <a href="../index.html"><img src="../Image/Logo de Nova Brew.png" alt="Logo Nova Brew" height="50"></a>
+      </div>
+      <div class="navLink">
+        <a href="boutique.html" class="underline-lr">Boutique</a>
+        <a href="a_propos.html" class="underline-lr">À propos</a>
+      </div>
+      <div class="cartImage">
+        <a href="Panier.html"><img src="../Images/panier.png" alt="Panier" height="50"></a>
+      </div>
+    </nav>
+  </header>
 
-    <main class="content">
-    <h1>Votre panier </h1>
-
-    <section class="cart">
+  <main class="page-container">
+    <section class="produits">
+      <h1>Votre panier</h1>
       <table class="cart-table">
         <thead>
           <tr>
@@ -37,66 +39,59 @@
         </thead>
         <tbody>
           <tr>
-            <td class="product">
-              <img src="../Images/Vodka.png" alt="Boisson 1">
-              <span>Vodka</span>
-            </td>
-            <td>18,00 €</td>
-            <td>3</td>
-            <td>54,00 €</td>
+            <td>Bière artisanale blonde</td>
+            <td>4.50 €</td>
+            <td>2</td>
+            <td>9.00 €</td>
           </tr>
           <tr>
-            <td class="product">
-              <img src="../Images/redBull.png" alt="Boisson 2">
-              <span>Redbull</span>
-            </td>
-            <td>2,00 €</td>
-            <td>5</td>
-            <td>10,00 €</td>
-          </tr>
-          <tr>
-            <td class="product">
-              <img src="../Images/Gin.png" alt="Boisson 3">
-              <span>Gin</span>
-            </td>
-            <td>12,00 €</td>
+            <td>Cola Nova</td>
+            <td>2.00 €</td>
             <td>3</td>
-            <td>36,00 €</td>
+            <td>6.00 €</td>
           </tr>
         </tbody>
       </table>
 
-      <div class="cart-summary">
-        <h2>Total du panier</h2>
-        <p>Sous-total : <strong>100,00 €</strong></p>
-        <p>Frais de livraison : <strong>3,00 €</strong></p>
-        <hr>
-
-        <div class="promo-code">
-          <label for="promo">Code promo :</label>
-          <input type="text" id="promo" name="promo" placeholder="Entrez votre code">
-          <button class="apply-btn">Appliquer</button>
+      <section class="suggestions">
+        <h2>Suggestions de boissons 🍹</h2>
+        <div class="suggestion-grid">
+          <div class="boisson">
+            <img src="../Images/boisson1.jpg" alt="Boisson 1">
+            <h3>Ice Tea Maison</h3>
+            <p>2.50 €</p>
+            <button>Ajouter</button>
+          </div>
+          <div class="boisson">
+            <img src="../Images/boisson2.jpg" alt="Boisson 2">
+            <h3>Bière IPA</h3>
+            <p>4.80 €</p>
+            <button>Ajouter</button>
+          </div>
+          <div class="boisson">
+            <img src="../Images/boisson3.jpg" alt="Boisson 3">
+            <h3>Limonade Bio</h3>
+            <p>2.20 €</p>
+            <button>Ajouter</button>
+          </div>
         </div>
-
-        <hr>
-        <p class="total">Total à payer : <strong>103,00 €</strong></p>
-
-        <button class="checkout-btn">Passer la commande</button>
-
-        <div class="paypal-section">
-          <p>Ou payez avec :</p>
-          <button class="paypal-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal Logo">
-            Payer avec PayPal
-          </button>
-        </div>
-      </div>
+      </section>
     </section>
+
+    <aside class="panier-fixe">
+      <h2>Résumé du panier</h2>
+      <div class="details-panier">
+        <p>Sous-total : <strong>15,00 €</strong></p>
+        <p>Livraison : <strong>2,50 €</strong></p>
+        <hr>
+        <p>Total : <strong>17,50 €</strong></p>
+      </div>
+      <button class="btn-payer">Payer maintenant</button>
+    </aside>
   </main>
 
-
   <footer>
-    <p>&copy; 2025 - Mon E-shop. Tous droits réservés by Léandre.</p>
+    <p>© 2025 Nova Brew - Tous droits réservés</p>
   </footer>
 </body>
 </html>
