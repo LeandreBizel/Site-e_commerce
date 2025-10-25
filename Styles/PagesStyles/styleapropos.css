@@ -1,22 +1,22 @@
-@import url(../CoreStyles/headerStyles.css);
-@import url(../CoreStyles/footerStyles.css);
+        @import url(../CoreStyles/headerStyles.css);
+        @import url(../CoreStyles/footerStyles.css);
 
-.fisrtSection {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    height: 650px;
-    background-image: url('../../Images/bar.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    align-items: center;
-    margin: 0;
-    color: white;
-}
-h1{
-    font-size: 100px;
-}
+        .banniere {
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            height: 650px;
+            background-image: url('../../Images/bar.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            margin: 0;
+            color: white;
+        }
+        h1{
+            font-size: 100px;
+        }
 
         * {
             margin: 0;
@@ -26,13 +26,13 @@ h1{
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: rgb(36, 73, 129);
+            background: rgb(240, 240, 240);
             min-height: 100vh;
             color: #333;
         }
 
 
-        /* Container principal */
+
         main {
             padding-top: 80px;
             max-width: 1200px;
@@ -41,7 +41,7 @@ h1{
             padding-right: 20px;
         }
 
-        /* Section À propos */
+
         .section {
             background: white;
             border-radius: 20px;
@@ -77,10 +77,10 @@ h1{
         }
 
         .case {
-            background: rgb(36, 73, 129);
+            background: rgb(255, 230, 0);
             padding: 40px;
             border-radius: 15px;
-            color: white;
+            color: #333;
             text-align: center;
             transition: transform 0.3s;
         }
@@ -100,12 +100,7 @@ h1{
             opacity: 0.95;
         }
 
-        .icone {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
 
-        /* Section Formulaire */
         .section-contact {
             background: white;
             border-radius: 20px;
@@ -161,8 +156,8 @@ h1{
         .formu-champ input:focus,
         .formu-champ textarea:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: #000107;
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
         }
 
         .formu-champ textarea {
@@ -173,8 +168,8 @@ h1{
         .valider {
             width: 100%;
             padding: 15px;
-            background: rgb(36, 73, 129);
-            color: white;
+            background: rgb(255, 230, 0);
+            color: #333;
             border: none;
             border-radius: 10px;
             font-size: 18px;
@@ -185,32 +180,13 @@ h1{
 
         .valider:hover {
             transform: translateY(-5%);
-            box-shadow: 0 10px 25px rgb(36, 73, 129);
+            box-shadow: 0 10px 25px rgb(54, 49, 0);
         }
 
         @media (max-width: 768px) {
-            nav {
-                padding: 15px 20px;
+            h1 {
+                font-size:  200%;
             }
 
-            .nav-links {
-                gap: 20px;
-            }
-
-            .about-section,
-            .contact-section {
-                padding: 30px 20px;
-            }
-
-            .about-header h1 {
-                font-size: 36px;
-            }
-
-            .contact-header h2 {
-                font-size: 30px;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-            }
+            
         }

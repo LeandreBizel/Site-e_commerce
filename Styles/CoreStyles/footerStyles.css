@@ -47,13 +47,13 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.instatext {
+.reseautext {
   opacity: 0;
   transition: opacity 0.3s;
   font-size: 14px;
 }
 
-.social-link:hover .instatext {
+.social-link:hover .reseautext {
   opacity: 1;
 }
 
@@ -85,3 +85,4 @@ footer {
   opacity: 0.8;
   margin-top: 10px;
 }
+

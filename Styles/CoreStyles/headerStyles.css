@@ -92,3 +92,12 @@ nav{
 .cartImage img:hover{
     transform: rotateZ(-30deg);
 }
+
+
+
+@media (max-width: 768px){
+    .navLink{
+        font-size: smaller;
+    }
+
+}
